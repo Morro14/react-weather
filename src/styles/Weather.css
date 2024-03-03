@@ -1,0 +1,8 @@
+.weather-day {
+    display: flex;
+    justify-content: center;
+}
+
+h4 {
+    text-transform: capitalize;
+}
