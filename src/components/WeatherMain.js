@@ -23,7 +23,7 @@ function WeatherMain(props) {
         );
 
     }
-    if (!location) {
+    if (!location && !props.selectResults[0]) {
         return (
             <div>
                 <p>loading...?</p>
