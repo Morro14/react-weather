@@ -1,13 +1,25 @@
-import React from "react";
-// import CountryList from "./CountryList.js";
+import NavBar from "./NavBar.js";
+import "../styles/Header.css";
+import Buttons from "./Buttons.js";
 
-function Header() {
-  return (
-    <Header>
-      <div>Header</div>
-      {/* <CountryList/> */}
-    </Header>
-  );
+function Header(props) {
+
+
+    return (
+        <header>
+            <nav className="nav">
+                <h1>Weather Service</h1>
+                <NavBar
+                    setSelectResults={props.setSelectResults}
+                    selectResults={props.selectResults}
+                />
+
+
+                <Buttons modeDefault="current" setMode={props.setMode} setSelectResults={props.setSelectResults}
+                ></Buttons>
+            </nav>
+        </header>
+    );
 }
 
 export default Header;

@@ -1,14 +1,15 @@
-import React from "react";
-import WeatherMain from './WeatherMain.js';
+import WeatherMain from "./WeatherMain";
+import '../styles/Main.css';
 
-
-
-function Main() {
+function Main(props) {
     return (
-       <main>
-        <WeatherMain/>
-       </main> 
+        <main>
+            <WeatherMain
+                selectResults={props.selectResults}
+                mode={props.mode}
+            ></WeatherMain>
+        </main>
     )
 }
 
-export default Main;
+export default Main

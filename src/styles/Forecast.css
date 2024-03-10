@@ -1,0 +1,27 @@
+.forecast-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.forecast-results {
+	display: flex;
+}
+@media screen and (max-width: 600px) {
+	.forecast-results {
+		display: flex;
+        flex-direction: column;
+
+	}
+}
+
+.forecast-table {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+}
+
+.forecast-title {
+	font-size: calc(10px + 2vmin);
+}

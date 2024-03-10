@@ -1,0 +1,11 @@
+main {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    height:100%;
+}
+
+.container {
+    display: grid;
+
+}

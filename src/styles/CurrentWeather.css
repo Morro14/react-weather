@@ -1,8 +1,10 @@
-.weather-day {
+.current-weather-table-container {
     display: flex;
     justify-content: center;
+    text-align: center;
 }
 
 h4 {
     text-transform: capitalize;
 }
+
